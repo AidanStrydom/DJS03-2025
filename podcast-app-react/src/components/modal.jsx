@@ -2,6 +2,15 @@ import { useState, useEffect } from 'react';
 import { GenreService } from '../utils/genreService';
 import { DateUtils } from '../utils/dateUtils';
 
+/**
+ * Displays a modal with podcast details and seasons.
+ *
+ * @param {Object} props - Component props.
+ * @param {Object} props.podcast - Podcast data to display.
+ * @param {Function} props.onClose - Function to close the modal.
+ * @returns {JSX.Element|null} Modal with podcast info, or null if no podcast selected.
+ */
+
 export default function Modal({ podcast, onClose }) {
   const [seasonData, setSeasonData] = useState([]);
   const [loading, setLoading] = useState(true);

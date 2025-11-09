@@ -2,6 +2,12 @@ import { useState, useEffect } from 'react';
 import PodcastCard from './components/podcastCard';
 import Modal from './components/modal';
 
+/**
+ * Main App component that displays a list of podcasts and a modal for details.
+ *
+ * @returns {JSX.Element} The main app layout with header, podcast grid, and modal.
+ */
+
 function App() {
   const [podcasts, setPodcasts] = useState([]);
   const [loading, setLoading] = useState(true);
