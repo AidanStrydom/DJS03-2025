@@ -1,5 +1,5 @@
-import React from 'react';
-import { GenreService, DateUtils } from '../podcastApp';
+import { GenreService } from '../utils/genreService';
+import { DateUtils } from '../utils/dateUtils';
 
 export default function PodcastCard({ podcast, onClick }) {
   const genreNames = GenreService.getNames(podcast.genres);
