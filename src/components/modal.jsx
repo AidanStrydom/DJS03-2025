@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GenreService, DateUtils } from '../PodcastApp';
+import { GenreService, DateUtils } from '../podcastApp';
 
 export default function Modal({ podcast, onClose }) {
   const [seasonData, setSeasonData] = useState([]);
